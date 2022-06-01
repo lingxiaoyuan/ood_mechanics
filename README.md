@@ -1,4 +1,4 @@
-# Out of Distribution for Problems in Mechanics
+# Out of Distribution Generalization for Problems in Mechanics
 
 This repository contains the code for the following paper:
 
@@ -19,6 +19,8 @@ The experiments use the following dataset. The datasets contains six benchmark o
 * `main.py` : The whole framework of training process using different algorithms for out of distribution problems
 * `sampling_bias_demo.ipynb` : The demo of creating data distrbution dataset caused by sampling bias
 * `evaluation.py` : code for evaluating the trained model on test environments
+* `submit_job.sh` : submit job for training models by selected hyperparameters 
+
 
 ## Training
 
