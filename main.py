@@ -13,6 +13,7 @@ import argparse
 from torch import nn, optim, autograd
 
 # function for training model: save the best model and return the error history
+#envs is a list of data environments, in which the first two are training environments and the rest are testing environments. Only the training environments will be used for training.  
 def training(flags, envs, h, seed):  
     #calculation of the penalty for IRM algorithm
     #the code for calculating the penalty for IRM is from https://github.com/facebookresearch/InvariantRiskMinimization
@@ -31,7 +32,7 @@ def training(flags, envs, h, seed):
     
     #calculation of the penalty for REx algorithm
     def rex_penalty(env):
-        #calculate the penalty: standard deviation of the risk across all training environments
+        #calculate the penalty: variance of the risk across all training environments
         train_penalty = torch.stack([envs[0]['nll'], envs[1]['nll']]).std()**2
         return train_penalty
     
@@ -41,7 +42,10 @@ def training(flags, envs, h, seed):
             train_size = int(len(env['images'])*0.8)
             #calculate the risk gradient of all training environments
             env['grad'] = autograd.grad(loss_fn(env['yhat'], env['labels'][:train_size]), model.parameters(), create_graph=True)[0]
-        #calculate the penalty: standard deviation of the risk gradient across all environments
+        #calculate the penalty: variance of the risk gradient across all environments
+        #other way to calculate variance: 
+        #train_penalty = (envs[0]['grad']-envs[1]['grad']).pow(2).mean()/2 
+        #train_penalty = torch.stack([envs[0]['grad'], envs[1]['grad']]).var()
         train_penalty = (envs[0]['grad']-envs[1]['grad']).pow(2).sum()/2 
         return train_penalty
     
@@ -144,11 +148,8 @@ if __name__ == "__main__":
     
     ##prepare data
     if not os.path.exists('envs.pkl'):
-        #prepare data for covariate shift: envs = env_covariate_shift()
-        #prepare data for mechanism shift: env = env_machanism shift()
-        #prepare data for sampling bias: env = env_sampling bias()
-        #here we take the mechanism shift as an example: 
-        envs = env_mechanism_shift() 
+        #load the covariate shift dataste (other dataset can be found in make_envs.py)
+        envs = env_covariate_shift_MNIST() 
         f = open("envs.pkl","wb")
         pickle.dump(envs,f)
         f.close()
