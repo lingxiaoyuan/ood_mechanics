@@ -2,7 +2,7 @@
 
 This repository contains the code for the following paper:
 
-> Lingxiao Yuan, Emma Lejuene\*, Harold Park\*
+> Lingxiao Yuan, Emma Lejeune\*, Harold Park\*
 >
 > [Out of Distribution Generalization for Problems in Mechanics](link forthcoming)
 
