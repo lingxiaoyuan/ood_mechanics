@@ -21,7 +21,7 @@ This folder contains the information of reproducing the results from the paper.
 * `submit_job.sh` : submit job for training models by selected hyperparameters 
 
 `envs_details`
-This folder contains more details of the process of how we generate or select OOD dataset. This information is not needed for reproducing the results from the paper. 
+This folder contains more details of the process of how we generate and select data for OOD dataset. This information is not needed for reproducing the results from the paper. 
 
 * `sampling_bias_demo.ipynb` : The demo of creating data distrbution dataset caused by sampling bias 
 * `make_envs_sampling_bias_MNIST.py` : The details of generating sampling bias dataset from Mechanical MNIST dataset
