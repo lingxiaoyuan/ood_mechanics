@@ -14,11 +14,11 @@ The experiments use the following dataset. The datasets contains six benchmark o
 ## Details 
 `model`
 This folder contains the information of reproducing the results from the paper. 
-* `model.py` : The two Machine Learning models(MLP and modified LeNet) for implementing all algorithms
+* `model.py` : The two Machine Learning models (MLP and modified LeNet) for implementing all algorithms
 * `make_envs.py` : The file loads dataset and makes a list containing data from different environments
 * `main.py` : The whole framework of training process using different algorithms for out of distribution problems
-* `evaluation.py` : demo code for evaluating the trained model on covariate shift dataset
-* `submit_job.sh` : submit job for training models by selected hyperparameters 
+* `evaluation.py` : Demo code for evaluating the trained model on covariate shift dataset
+* `submit_job.sh` : Submit job for training models by selected hyperparameters 
 
 `envs_details`
 This folder contains more details of the process of how we generate and select data for OOD dataset. This information is not needed for reproducing the results from the paper. 
