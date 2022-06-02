@@ -31,9 +31,9 @@ This folder contains more details of the process of how we generate or select OO
 ### Hypermeters 
 Below are the parameters to choose for training the model. The selected hyperparamters were given in the paper. But the results are not guaranteed to be exactly the same due to randomness. 
 
-* lr: learning rate
-* steps: the whole epochs for training the model
-* penalty_anneal_iters: the anneal step after which we add the penalty to the loss function
-* penalty_weight: the weight of penalty term, this controls the strength of the penalty term
-* algorithm: the name of the algorithm to implemente ('erm', 'irm','rex','iga')
-* model: the name of the model to train('mlp','lenet')
+* `lr`: learning rate
+* `steps`: the whole epochs for training the model
+* `penalty_anneal_iters`: the anneal step after which we add the penalty to the loss function
+* `penalty_weight`: the weight of penalty term, this controls the strength of the penalty term
+* `algorithm`: the name of the algorithm to implemente (`erm`, `irm`,`rex`,`iga`)
+* `model`: the name of the model to train(`mlp`,`lenet`)
