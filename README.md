@@ -45,6 +45,6 @@ Below are the parameters to choose for training the model. The selected hyperpar
 The `main.py` file adapted three algorithms designed for out of distribution problems. Below are the links to these paper and the source code for the IRM algorithms which we adapted. 
 * IRM:[Invariant Risk Minimization](https://arxiv.org/abs/1907.02893)
 
-     [the code of IRM]https://github.com/facebookresearch/InvariantRiskMinimization, licensed under [LICENCE](https://github.com/facebookresearch/InvariantRiskMinimization/blob/main/LICENSE)
+  Code for IRM:https://github.com/facebookresearch/InvariantRiskMinimization, licensed under [LICENCE](https://github.com/facebookresearch/InvariantRiskMinimization/blob/main/LICENSE)
 * REx:[Out-of-Distribution Generalization via Risk Extrapolation (REx)](https://arxiv.org/abs/2003.00688)
 * IGA:[Out-of-Distribution Generalization with Maximal Invariant Predictor](https://openreview.net/forum?id=FzGiUKN4aBp&referrer=[the%20profile%20of%20Masanori%20Koyama](/profile?id=~Masanori_Koyama1))
