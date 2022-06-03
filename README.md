@@ -17,8 +17,7 @@ The experiments use the following dataset. The datasets contains six benchmark o
 This folder contains more details of the process of how we generate and select data for OOD dataset. This information is not needed for reproducing the results from the paper. 
 
 * `sampling_bias_demo.ipynb` : The demo of creating data distrbution dataset caused by sampling bias 
-* `make_envs_sampling_bias_MNIST.py` : The details of generating sampling bias dataset from Mechanical MNIST dataset
-* `make_envs_sampling_bias_EMNIST.py` : The details of generating sampling bias dataset from Mechanical MNIST - EMNIST Letters dataset
+* `make_envs_sampling_bias_MNIST.py` : The demo code for generating sampling bias dataset from Mechanical MNIST dataset
 * `index_dataset_MNIST_EMNIST.txt` : the corresponding index of the OOD data in the original MNIST and EMNIST Letters
 
 `model`
