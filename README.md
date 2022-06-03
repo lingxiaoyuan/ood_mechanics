@@ -18,7 +18,7 @@ This folder contains more details of the process of how we generate and select d
 
 * `sampling_bias_demo.ipynb` : The demo of creating data distrbution dataset caused by sampling bias 
 * `make_envs_sampling_bias_MNIST.py` : The demo code for generating sampling bias dataset from Mechanical MNIST dataset
-* `index_dataset_MNIST_EMNIST.txt` : the corresponding index of the OOD data in the original MNIST and EMNIST Letters
+* `index_dataset_MNIST_EMNIST.txt` : The corresponding index of the OOD data in the original MNIST and EMNIST Letters
 
 `model`
 This folder contains the information of reproducing the results from the paper. 
@@ -42,7 +42,7 @@ Below are the parameters to choose for training the model. The selected hyperpar
 
 ## References
 The `main.py` file adapted three algorithms designed for out of distribution problems. Below are the links to these paper and the source code for the IRM algorithms that we adapted. 
-* IRM:[Invariant risk minimization](https://arxiv.org/abs/1907.02893)
+* IRM:[Invariant Risk Minimization](https://arxiv.org/abs/1907.02893)
 
   Code for IRM:https://github.com/facebookresearch/InvariantRiskMinimization, licensed under [LICENCE](https://github.com/facebookresearch/InvariantRiskMinimization/blob/main/LICENSE)
 * REx:[Out-of-Distribution Generalization via Risk Extrapolation (REx)](https://arxiv.org/abs/2003.00688)
