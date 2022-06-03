@@ -10,7 +10,7 @@ This repository contains the code for the following paper:
 The experiments use the following dataset. The datasets contains six benchmark out of distirbution datasets specifically for regression problems in mechanics.  
 - [Mechanical MNIST – Distribution Shift](https://open.bu.edu/handle/2144/44485)
 
-<img src="https://user-images.githubusercontent.com/58915487/171908617-18cdc387-8b24-4cbb-869b-d0538379de01.png" alt="Mechanical MNIST – Distribution Shift" width="200"/>
+<img src="https://user-images.githubusercontent.com/58915487/171908617-18cdc387-8b24-4cbb-869b-d0538379de01.png" alt="Mechanical MNIST – Distribution Shift" width="400"/>
 
 ## Details 
 `envs_details`
