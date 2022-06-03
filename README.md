@@ -41,7 +41,7 @@ Below are the parameters to choose for training the model. The selected hyperpar
 * `model`: the name of the model to train(`mlp`,`lenet`)
 
 ## References
-The `main.py` file adapted three algorithms designed for out of distribution problems. Below are the links to these paper and the source code for the IRM algorithms which we adapted. 
+The `main.py` file adapted three algorithms designed for out of distribution problems. Below are the links to these paper and the source code for the IRM algorithms that we adapted. 
 * IRM:[Invariant Risk Minimization](https://arxiv.org/abs/1907.02893)
 
   Code for IRM:https://github.com/facebookresearch/InvariantRiskMinimization, licensed under [LICENCE](https://github.com/facebookresearch/InvariantRiskMinimization/blob/main/LICENSE)
