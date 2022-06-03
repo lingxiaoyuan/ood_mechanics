@@ -10,7 +10,7 @@ This repository contains the code for the following paper:
 The experiments use the following dataset. The datasets contains six benchmark out of distirbution datasets specifically for regression problems in mechanics.  
 - [Mechanical MNIST – Distribution Shift](https://open.bu.edu/handle/2144/44485)
 
-![Mechanical MNIST – Distribution Shift](https://user-images.githubusercontent.com/58915487/171908617-18cdc387-8b24-4cbb-869b-d0538379de01.png =x200)
+<img src="[drawing.jpg](https://user-images.githubusercontent.com/58915487/171908617-18cdc387-8b24-4cbb-869b-d0538379de01.png)" alt="Mechanical MNIST – Distribution Shift" width="200"/>
 
 ## Details 
 `envs_details`
@@ -44,6 +44,7 @@ Below are the parameters to choose for training the model. The selected hyperpar
 ## References
 The `main.py` file adapted three algorithms designed for out of distribution problems. Below are the links to these paper and the source code for the IRM algorithms which we adapted. 
 * IRM:[Invariant Risk Minimization](https://arxiv.org/abs/1907.02893)
+
       [the code of IRM]https://github.com/facebookresearch/InvariantRiskMinimization, licensed under [LICENCE](https://github.com/facebookresearch/InvariantRiskMinimization/blob/main/LICENSE)
 * REx:[Out-of-Distribution Generalization via Risk Extrapolation (REx)](https://arxiv.org/abs/2003.00688)
 * IGA:[Out-of-Distribution Generalization with Maximal Invariant Predictor](https://openreview.net/forum?id=FzGiUKN4aBp&referrer=[the%20profile%20of%20Masanori%20Koyama](/profile?id=~Masanori_Koyama1))
