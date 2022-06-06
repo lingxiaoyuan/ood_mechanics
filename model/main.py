@@ -43,7 +43,8 @@ def training(flags, envs, h, seed):
             #calculate the risk gradient of all training environments
             env['grad'] = autograd.grad(loss_fn(env['yhat'], env['labels'][:train_size]), model.parameters(), create_graph=True)[0]
         #calculate the penalty: variance of the risk gradient across all environments
-        train_penalty = torch.stack([envs[0]['grad'], envs[1]['grad']]).var()
+        #It also works as train_penalty = (envs[0]['grad']-envs[1]['grad']).pow(2).mean()/2 . However the optimal penalty weight has to be returned.  
+        train_penalty = (envs[0]['grad']-envs[1]['grad']).pow(2).sum()/2 
         return train_penalty
     
     #choose a model
