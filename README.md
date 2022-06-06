@@ -49,7 +49,7 @@ The `main.py` file adapted three algorithms designed for out of distribution pro
 * IGA:[Out-of-Distribution Generalization with Maximal Invariant Predictor](https://openreview.net/forum?id=FzGiUKN4aBp&referrer=[the%20profile%20of%20Masanori%20Koyama](/profile?id=~Masanori_Koyama1))
 
 ## Links
-Code for implementing finite element simulation of heterogeneous material subject to large deformation due to equibiaxial extensionFEM is available on GitHub, the environmental control parameter $s$ can be adjusted by changing the variable 'high' (line 62) to other value of s (orginally $100$). The details of the meaning of parameter $s$ can be found in the [paper](link forthcoming). The link to the github code is: https://github.com/elejeune11/Mechanical-MNIST/blob/master/generate_dataset/Equibiaxial_Extension_FEA_test_FEniCS.py
+Code for implementing finite element simulation of heterogeneous material subject to large deformation due to equibiaxial extension is available on GitHub, the environmental control parameter $s$ can be adjusted by changing the variable 'high' (line 62) to other value of $s$ (orginally $100$). More details of parameter $s$ can be found in the [paper](link forthcoming). The link to the github code is: https://github.com/elejeune11/Mechanical-MNIST/blob/master/generate_dataset/Equibiaxial_Extension_FEA_test_FEniCS.py
 
 The Mechanical MNIST - Equibiaxial Extension Collection from which sampling bias data is created is available on OpenBU Institutional Repository at: https://open.bu.edu/handle/2144/39428
 
