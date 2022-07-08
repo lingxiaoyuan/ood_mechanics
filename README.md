@@ -4,7 +4,7 @@ This repository contains the code for the following paper:
 
 > Lingxiao Yuan, Harold Park\*, Emma Lejeune\*
 >
-> [Out of Distribution Generalization for Problems in Mechanics](link forthcoming)
+> [Out of Distribution Generalization for Problems in Mechanics](https://arxiv.org/abs/2206.14917)
 
 ## Datasets
 The experiments use the following dataset. The datasets contains six benchmark out of distirbution datasets specifically for regression problems in mechanics.  
