@@ -22,7 +22,7 @@ def env_covariate_shift_MNIST():
     envs = []
 
     envs.append({'images':torch.tensor(train1_input,dtype = torch.float32), 
-                 'labels':torch.tensor(train2_label,dtype = torch.float32)})
+                 'labels':torch.tensor(train1_label,dtype = torch.float32)})
     envs.append({'images':torch.tensor(train2_input,dtype = torch.float32),
                  'labels':torch.tensor(train2_label,dtype = torch.float32)})
     envs.append({'images':torch.tensor(test1_input,dtype = torch.float32), 
@@ -50,7 +50,7 @@ def env_mechanism_shift_MNIST():
     envs = []
 
     envs.append({'images':torch.tensor(train1_input,dtype = torch.float32), 
-                 'labels':torch.tensor(train2_label,dtype = torch.float32)})
+                 'labels':torch.tensor(train1_label,dtype = torch.float32)})
     envs.append({'images':torch.tensor(train2_input,dtype = torch.float32),
                  'labels':torch.tensor(train2_label,dtype = torch.float32)})
     envs.append({'images':torch.tensor(test1_input,dtype = torch.float32), 
@@ -119,7 +119,7 @@ def env_covariate_shift_EMNIST():
     envs = []
 
     envs.append({'images':torch.tensor(train1_input,dtype = torch.float32), 
-                 'labels':torch.tensor(train2_label,dtype = torch.float32)})
+                 'labels':torch.tensor(train1_label,dtype = torch.float32)})
     envs.append({'images':torch.tensor(train2_input,dtype = torch.float32),
                  'labels':torch.tensor(train2_label,dtype = torch.float32)})
     envs.append({'images':torch.tensor(test1_input,dtype = torch.float32), 
@@ -147,7 +147,7 @@ def env_mechanism_shift_EMNIST():
     envs = []
 
     envs.append({'images':torch.tensor(train1_input,dtype = torch.float32), 
-                 'labels':torch.tensor(train2_label,dtype = torch.float32)})
+                 'labels':torch.tensor(train1_label,dtype = torch.float32)})
     envs.append({'images':torch.tensor(train2_input,dtype = torch.float32),
                  'labels':torch.tensor(train2_label,dtype = torch.float32)})
     envs.append({'images':torch.tensor(test1_input,dtype = torch.float32), 
